@@ -48,8 +48,42 @@ export default function App() {
   }
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid fixed-bottom">
       <center><h1>Rack Calculator</h1></center>
+      <div className="table-responsive">
+        <table className="table">
+          <tbody>
+            <tr>
+              <th scope="row">Price:</th>
+              <td>{price} ₹</td>
+            </tr>
+            <tr>
+              <th scope="row">Angle:</th>
+              <td>₹</td>
+            </tr>
+            <tr>
+              <th scope="row">Shelf:</th>
+              <td>₹</td>
+            </tr>
+            <tr>
+              <th scope="row">Weight~</th>
+              <td>KG</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="row">
+        <div className="form-check form-switch">
+          <input className="form-check-input" type="checkbox" id="weight" />
+          <label className="form-check-label" htmlFor="weight">W</label>
+        </div>
+        <div className="form-check form-switch">
+          <input className="form-check-input" type="checkbox" id="retail" />
+          <label className="form-check-label" htmlFor="retail">R</label>
+        </div>
+      </div>
+
+
       <div className="row">
         <div className="col-4">
           <div className="form-floating">
@@ -105,39 +139,9 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="table-responsive">
-        <table className="table">
-          <tbody>
-            <tr>
-              <th scope="row">Price:</th>
-              <td>{price} ₹</td>
-            </tr>
-            <tr>
-              <th scope="row">Angle:</th>
-              <td>₹</td>
-            </tr>
-            <tr>
-              <th scope="row">Shelf:</th>
-              <td>₹</td>
-            </tr>
-            <tr>
-              <th scope="row">Weight~</th>
-              <td>KG</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div className="row">
-        <div className="form-check form-switch">
-          <input className="form-check-input" type="checkbox" id="weight" />
-          <label className="form-check-label" htmlFor="weight">W</label>
-        </div>
-        <div className="form-check form-switch">
-          <input className="form-check-input" type="checkbox" id="retail" />
-          <label className="form-check-label" htmlFor="retail">R</label>
-        </div>
-      </div>
+
     </div>
+
   );
 
 }
