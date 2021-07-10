@@ -53,7 +53,7 @@ export default function App() {
       <div className="row">
         <div className="col-4">
           <div className="form-floating">
-            <select onChange={handleInputChange} className="form-select" name="height" value={values.height}>
+            <select onChange={handleInputChange} className="form-select form-select-lg" name="height" value={values.height}>
               {heights.map((e, key) => {
                 return <option key={key} value={e}>{e}"</option>;
               })}
@@ -64,7 +64,7 @@ export default function App() {
 
         <div className="col-4">
           <div className="form-floating">
-            <select onChange={handleInputChange} className="form-select" name="width" value={values.width}>
+            <select onChange={handleInputChange} className="form-select form-select-lg" name="width" value={values.width}>
               {widths.map((e, key) => {
                 return <option key={key} value={e}>{e}"</option>;
               })}
@@ -74,7 +74,7 @@ export default function App() {
         </div>
         <div className="col-4">
           <div className="form-floating">
-            <select onChange={handleInputChange} className="form-select" name="depth" value={values.depth}>
+            <select onChange={handleInputChange} className="form-select form-select-lg" name="depth" value={values.depth}>
               {depths.map((e, key) => {
                 return <option key={key} value={e}>{e}"</option>;
               })}
@@ -86,7 +86,7 @@ export default function App() {
       <div className="row">
         <div className="col-6">
           <div className="form-floating">
-            <select onChange={handleInputChange} className="form-select" name="angle" value={values.angle}>
+            <select onChange={handleInputChange} className="form-select form-select-lg" name="angle" value={values.angle}>
               {angle_gauges.map((e, key) => {
                 return <option key={key} value={e.value}>{e.name}</option>;
               })}
@@ -96,7 +96,7 @@ export default function App() {
         </div>
         <div className="col-6">
           <div className="form-floating">
-            <select onChange={handleInputChange} className="form-select" name="sheet" value={values.sheet}>
+            <select onChange={handleInputChange} className="form-select form-select-lg" name="sheet" value={values.sheet}>
               {sheet_gauges.map((e, key) => {
                 return <option key={key} value={e.value}>{e.name}</option>;
               })}
